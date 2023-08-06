@@ -46,8 +46,8 @@ module.exports = async function updateFiles(ws) {
       repo: integrations[1]
     },
     {
-      owner: 'inotia00',
-      repo: 'VancedMicroG'
+      owner: 'kazimmt',
+      repo: 'GmsCore'
     }
   ];
 
