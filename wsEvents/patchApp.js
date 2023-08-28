@@ -162,7 +162,7 @@ module.exports = async function patchApp(ws) {
     global.jarNames.patchesJar,
     '--merge',
     global.jarNames.integrations,
-    '--experimental',
+    '--force',
     '--out',
     join(global.revancedDir, 'revanced.apk'),
   ];
