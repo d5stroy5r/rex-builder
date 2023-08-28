@@ -156,15 +156,15 @@ module.exports = async function patchApp(ws) {
   const args = [
     '-jar',
     global.jarNames.cli,
-    'patch --patch-bundle',
+    'patch', 
+    `${join(global.revancedDir, global.jarNames.selectedApp.packageName)}.apk`,
+    '--patch-bundle',
     global.jarNames.patchesJar,
     '--merge',
     global.jarNames.integrations,
     '--experimental',
     '--out',
     join(global.revancedDir, 'revanced.apk'),
-    '--apk',
-    `${join(global.revancedDir, global.jarNames.selectedApp.packageName)}.apk`
   ];
 
   if (process.platform === 'android') {
